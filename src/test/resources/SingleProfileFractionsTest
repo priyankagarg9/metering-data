@@ -1,0 +1,38 @@
+# TEST CASE 1# valid data - Profile A
+{
+  "monthlyFractions": {
+	  "JANUARY": 0.15,
+	  "FEBRUARY": 0.17,
+	  "MARCH": 0.13,
+	  "APRIL": 0.08,
+	  "MAY": 0.08,
+	  "JUNE": 0.0,
+	  "JULY": 0.0,
+	  "AUGUST": 0.01,
+	  "SEPTEMBER": 0.04,
+	  "OCTOBER": 0.09,
+	  "NOVEMBER": 0.1,
+	  "DECEMBER": 0.15
+	}
+}
+# RESULT: Http code 200 - profiles and fractions added to DB
+
+
+# TEST CASE 2# invalid data - total doesn't match 1 - Profile B
+{
+  "monthlyFractions": {
+	  "JANUARY": 1.15,
+	  "FEBRUARY": 0.17,
+	  "MARCH": 0.13,
+	  "APRIL": 0.08,
+	  "MAY": 0.08,
+	  "JUNE": 0.0,
+	  "JULY": 0.0,
+	  "AUGUST": 0.01,
+	  "SEPTEMBER": 0.04,
+	  "OCTOBER": 0.09,
+	  "NOVEMBER": 0.1,
+	  "DECEMBER": 0.15
+	}
+}
+# RESULT: Http code 400 - BAD_REQUEST - Fractions total doesn't match

@@ -1,0 +1,176 @@
+#Assumption: Fraction data for Profile A (Meter id: 1001) exists in database
+
+# TEST CASE 1# Try inserting data for Profile B (Meter id: 1002) (which doesn't exist)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 610,
+   "AUGUST": 620,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 1000
+  },
+  "profile": "B"
+}
+# RESULT: Http code 400 - BAD_REQUEST (Profile doesn't exist)
+
+
+# TEST CASE 2# Profile exists - but next month reading is less than previous month (December) (Meter id: 1001)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 610,
+   "AUGUST": 620,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 800
+  },
+  "profile": "A"
+}
+# RESULT: Http code 400 - BAD_REQUEST (The profile has inconsistent data)
+
+# TEST CASE 3# Profile exists - but next month reading is less than previous month (July) (Meter id: 1001)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 600,
+   "AUGUST": 620,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 1000
+  },
+  "profile": "A"
+}
+# RESULT: Http code 400 - BAD_REQUEST (The profile has inconsistent data)
+
+
+# TEST CASE 4# The meter reading has variance of more than 25% compared to fraction (February)(Meter id: 1001)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 250,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 610,
+   "AUGUST": 620,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 1000
+  },
+  "profile": "A"
+}
+# RESULT: Http code 400 - BAD_REQUEST (The profile has inconsistent data)
+
+
+# TEST CASE 5# The meter reading has variance of more than 25% compared to fraction (July)(Meter id: 1001)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 612,
+   "AUGUST": 620,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 1000
+  },
+  "profile": "A"
+}
+# RESULT: Http code 400 - BAD_REQUEST (The profile has inconsistent data)
+
+
+# TEST CASE 6# The meter reading has variance of more than 25% compared to fraction (August)(Meter id: 1001)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 610,
+   "AUGUST": 617,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 1000
+  },
+  "profile": "A"
+}
+# RESULT: Http code 400 - BAD_REQUEST (The profile has inconsistent data)
+
+
+# TEST CASE 7# The meter reading has variance of less than 25% compared to fraction (August)(Meter id: 1001)
+
+{
+  "monthlyReadings": {
+   "JANUARY": 150,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "MAY": 610,
+   "JUNE": 610,
+   "JULY": 610,
+   "AUGUST": 618,
+   "SEPTEMBER": 660,
+   "OCTOBER": 750,
+   "NOVEMBER": 850,
+   "DECEMBER": 1000
+  },
+  "profile": "A"
+}
+# RESULT: Http code 200
+
+
+# TEST CASE 8# The readings are correct but in random order (Meter id: 1002)
+
+{
+  "monthlyReadings": {
+   "MAY": 610,
+   "FEBRUARY": 320,
+   "MARCH": 450,
+   "APRIL": 530,
+   "DECEMBER": 1000,
+   "JUNE": 610,
+   "JULY": 610,
+   "AUGUST": 620,
+   "SEPTEMBER": 660,
+   "JANUARY": 150,
+   "OCTOBER": 750,
+   "NOVEMBER": 850
+   
+  },
+  "profile": "B"
+}
+

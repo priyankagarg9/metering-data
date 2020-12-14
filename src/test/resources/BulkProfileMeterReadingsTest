@@ -1,0 +1,153 @@
+#Assumption: Fraction data for Profile M (Meter id: 1005) and Profile N (Meter id: 1006) exists in database
+
+# TEST CASE 1# Valid Data
+{
+  "meterReadings": [
+	  {
+	    "meterId": "1005",
+	    "month": "JANUARY",
+	    "profile": "M",
+	    "reading": 150
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "FEBRUARY",
+	    "profile": "M",
+	    "reading": 320
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "MARCH",
+	    "profile": "M",
+	    "reading": 450
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "APRIL",
+	    "profile": "M",
+	    "reading": 530
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "MAY",
+	    "profile": "M",
+	    "reading": 610
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "JUNE",
+	    "profile": "M",
+	    "reading": 610
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "JULY",
+	    "profile": "M",
+	    "reading": 610
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "AUGUST",
+	    "profile": "M",
+	    "reading": 620
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "SEPTEMBER",
+	    "profile": "M",
+	    "reading": 660
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "OCTOBER",
+	    "profile": "M",
+	    "reading": 750
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "NOVEMBER",
+	    "profile": "M",
+	    "reading": 850
+	  },
+	  {
+	    "meterId": "1005",
+	    "month": "DECEMBER",
+	    "profile": "M",
+	    "reading": 1000
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "JANUARY",
+	    "profile": "N",
+	    "reading": 150
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "FEBRUARY",
+	    "profile": "N",
+	    "reading": 320
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "MARCH",
+	    "profile": "N",
+	    "reading": 450
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "APRIL",
+	    "profile": "N",
+	    "reading": 530
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "MAY",
+	    "profile": "N",
+	    "reading": 610
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "JUNE",
+	    "profile": "N",
+	    "reading": 610
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "JULY",
+	    "profile": "N",
+	    "reading": 610
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "AUGUST",
+	    "profile": "N",
+	    "reading": 620
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "SEPTEMBER",
+	    "profile": "N",
+	    "reading": 660
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "OCTOBER",
+	    "profile": "N",
+	    "reading": 750
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "NOVEMBER",
+	    "profile": "N",
+	    "reading": 850
+	  },
+	  {
+	    "meterId": "1006",
+	    "month": "DECEMBER",
+	    "profile": "N",
+	    "reading": 1000
+	  }
+	]
+}
+
+# Change data from above test case for different validation errors

@@ -1,0 +1,130 @@
+# TEST CASE 1# valid data
+{
+  "profileFractions":[
+	    {
+	        "month": "JANUARY", 
+	        "profile": "M", 
+	        "fraction": 0.15
+	    },
+		{
+	        "month": "FEBRUARY", 
+	        "profile": "M", 
+	        "fraction": 0.17
+	    },
+	    {
+	        "month": "MARCH", 
+	        "profile": "M", 
+	        "fraction": 0.13
+	    },
+		{
+	        "month": "APRIL", 
+	        "profile": "M", 
+	        "fraction": 0.08
+	    },
+		{
+	        "month": "MAY", 
+	        "profile": "M", 
+	        "fraction": 0.08
+	    },
+	    {
+	        "month": "JUNE", 
+	        "profile": "M", 
+	        "fraction": 0.0
+	    },
+		{
+	        "month": "JULY", 
+	        "profile": "M", 
+	        "fraction": 0.0
+	    },
+		{
+	        "month": "AUGUST", 
+	        "profile": "M", 
+	        "fraction": 0.01
+	    },
+	    {
+	        "month": "SEPTEMBER", 
+	        "profile": "M", 
+	        "fraction": 0.04
+	    },
+		{
+	        "month": "OCTOBER", 
+	        "profile": "M", 
+	        "fraction": 0.09
+	    },
+		{
+	        "month": "NOVEMBER", 
+	        "profile": "M", 
+	        "fraction": 0.1
+	    },
+	    {
+	        "month": "DECEMBER", 
+	        "profile": "M", 
+	        "fraction": 0.15
+	    },
+	    {
+	        "month": "JANUARY", 
+	        "profile": "N", 
+	        "fraction": 0.15
+	    },
+		{
+	        "month": "FEBRUARY", 
+	        "profile": "N", 
+	        "fraction": 0.17
+	    },
+	    {
+	        "month": "MARCH", 
+	        "profile": "N", 
+	        "fraction": 0.13
+	    },
+		{
+	        "month": "APRIL", 
+	        "profile": "N", 
+	        "fraction": 0.08
+	    },
+		{
+	        "month": "MAY", 
+	        "profile": "N", 
+	        "fraction": 0.08
+	    },
+	    {
+	        "month": "JUNE", 
+	        "profile": "N", 
+	        "fraction": 0.0
+	    },
+		{
+	        "month": "JULY", 
+	        "profile": "N", 
+	        "fraction": 0.0
+	    },
+		{
+	        "month": "AUGUST", 
+	        "profile": "N", 
+	        "fraction": 0.01
+	    },
+	    {
+	        "month": "SEPTEMBER", 
+	        "profile": "N", 
+	        "fraction": 0.04
+	    },
+		{
+	        "month": "OCTOBER", 
+	        "profile": "N", 
+	        "fraction": 0.09
+	    },
+		{
+	        "month": "NOVEMBER", 
+	        "profile": "N", 
+	        "fraction": 0.1
+	    },
+	    {
+	        "month": "DECEMBER", 
+	        "profile": "N", 
+	        "fraction": 0.15
+	    }
+	]
+}
+
+# RESULT: Http code 200 - profiles and fractions added to DB
+
+# TEST CASE 2# To check for validation errors, change any fraction value from above test case and execute again.
+
