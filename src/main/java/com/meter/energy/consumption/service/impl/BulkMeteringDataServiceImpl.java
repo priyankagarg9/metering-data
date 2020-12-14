@@ -14,8 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.meter.energy.consumption.controller.dto.MeterReadingDto;
-import com.meter.energy.consumption.controller.dto.ProfileFractionDto;
+import com.meter.energy.consumption.dto.MeterReadingDto;
+import com.meter.energy.consumption.dto.ProfileFractionDto;
 import com.meter.energy.consumption.exception.ApplicationException;
 import com.meter.energy.consumption.persistence.model.MeterData;
 import com.meter.energy.consumption.persistence.model.MeterProfile;

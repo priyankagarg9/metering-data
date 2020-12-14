@@ -18,8 +18,8 @@ import org.mockito.Mockito;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import com.meter.energy.consumption.controller.dto.MeterReadingDto;
-import com.meter.energy.consumption.controller.dto.ProfileFractionDto;
+import com.meter.energy.consumption.dto.MeterReadingDto;
+import com.meter.energy.consumption.dto.ProfileFractionDto;
 import com.meter.energy.consumption.exception.ApplicationException;
 import com.meter.energy.consumption.persistence.model.MeterData;
 import com.meter.energy.consumption.persistence.model.MeterProfile;

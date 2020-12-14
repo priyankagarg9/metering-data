@@ -3,8 +3,8 @@ package com.meter.energy.consumption.service;
 import java.util.List;
 import java.util.Map;
 
-import com.meter.energy.consumption.controller.dto.MeterReadingDto;
-import com.meter.energy.consumption.controller.dto.ProfileFractionDto;
+import com.meter.energy.consumption.dto.MeterReadingDto;
+import com.meter.energy.consumption.dto.ProfileFractionDto;
 
 /**
  * Interface representing service methods for metering data in bulk

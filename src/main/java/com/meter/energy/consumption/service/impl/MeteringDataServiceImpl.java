@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.meter.energy.consumption.controller.dto.MeterMonthlyReadingDto;
+import com.meter.energy.consumption.dto.MeterMonthlyReadingDto;
 import com.meter.energy.consumption.exception.ApplicationException;
 import com.meter.energy.consumption.persistence.model.MeterData;
 import com.meter.energy.consumption.persistence.model.MeterProfile;

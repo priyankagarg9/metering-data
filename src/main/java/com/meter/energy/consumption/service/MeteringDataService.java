@@ -3,7 +3,7 @@ package com.meter.energy.consumption.service;
 import java.time.Month;
 import java.util.Map;
 
-import com.meter.energy.consumption.controller.dto.MeterMonthlyReadingDto;
+import com.meter.energy.consumption.dto.MeterMonthlyReadingDto;
 
 /**
  * Interface representing service methods for metering data

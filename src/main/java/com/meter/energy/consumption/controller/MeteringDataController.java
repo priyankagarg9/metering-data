@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.meter.energy.consumption.controller.dto.MeterMonthlyReadingDto;
-import com.meter.energy.consumption.controller.dto.MonthlyProfileFractionsDto;
+import com.meter.energy.consumption.dto.MeterMonthlyReadingDto;
+import com.meter.energy.consumption.dto.MonthlyProfileFractionsDto;
 import com.meter.energy.consumption.service.MeteringDataService;
 
 import io.swagger.annotations.Api;

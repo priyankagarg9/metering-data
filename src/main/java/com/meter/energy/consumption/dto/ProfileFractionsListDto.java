@@ -1,4 +1,4 @@
-package com.meter.energy.consumption.controller.dto;
+package com.meter.energy.consumption.dto;
 
 import java.util.List;
 
